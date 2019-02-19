@@ -98,5 +98,3 @@ class Hangman
     puts "Secret word is: #{@secret_word}"
   end
 end
-
-Hangman.new.play
