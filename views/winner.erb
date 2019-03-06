@@ -1,0 +1,13 @@
+<h2>CONGRATULATIONS! YOU WON!</h2>
+
+<style>
+body {
+  background: #1E90FF;
+}
+</style>
+
+  <p>The word was <%= session["game"].word %></p>
+  <p>Incorrect Guesses:  <%= session["game"].show_misses%> </p>
+  <form action='/new'>
+    <button type='submit'>New game</button>
+  </form>

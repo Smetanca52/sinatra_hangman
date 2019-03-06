@@ -1,0 +1,8 @@
+<h2>Welcome to Hangman Game</h2>
+
+<p><%= guess %> </p>
+  <form action='/guess' method='post' autocomplete="off">
+    <input  type='text' name='guess' autofocus
+    placeholder='Type a letter and press enter' ><br>
+  </form>
+  <p>Wrong Guesses:  <%= session["game"].show_misses%> </p>
