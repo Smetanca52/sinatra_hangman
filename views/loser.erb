@@ -1,13 +1,18 @@
 <h2>YOU LOST!</h2>
 
-<style>
-body {
-  background: #DC143C;
-}
-</style>
-
-  <p>The word was <%= session["game"].word %></p>
+<section>
+  <style>
+    body {
+      background: #DC143C;
+    }
+  </style>
+  <p>The word was <u><%= session["game"].word %></u></p>
   <p>Incorrect Guesses:  <%= session["game"].show_misses%> </p>
   <form action='/new'>
     <button type='submit'>New game</button>
   </form>
+</section>
+
+<aside>
+  <img src="images/8.png" alt="">
+</aside>

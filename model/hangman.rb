@@ -1,3 +1,4 @@
+
 class Hangman
 attr_reader :misses
 attr_reader :word

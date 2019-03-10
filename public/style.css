@@ -1,26 +1,28 @@
 body {
   background: #f7cac9;
-  float: center;
   text-align: center;
   font-family: Uroob, sans-serif;
   font-size: 30px;
-  margin-top: 120px;
+  margin-top: 30px;
 }
 
-input{
-  margin-bottom: 15px;
-  width: 30%;
-  height: 30px;
-  border-radius: 4px;
-  box-sizing: border-box;
+section {
+  float: left;
 }
-input:focus {
+
+aside {
+  float: center;
+}
+
+input {
   width: 40%;
   height: 50px;
   padding: 10px 17px;
+  margin-top: 70px;
   font-family: Ubuntu;
   font-size: inherit;
 }
+
 button{
   background-color: inherit;
   color: black;
@@ -31,9 +33,15 @@ button{
   border-radius: 8px;
   font-family: URW Gothic;
 }
+
 button:hover {
   background-color: #034f84;
 }
+
+img {
+  height: 450px;
+}
+
 p{
   font-family: Ubuntu;
   font-size: 40px;

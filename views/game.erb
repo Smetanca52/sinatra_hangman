@@ -1,8 +1,28 @@
 <h2>Welcome to Hangman Game</h2>
-
-<p><%= guess %> </p>
+<section>
   <form action='/guess' method='post' autocomplete="off">
     <input  type='text' name='guess' autofocus
-    placeholder='Type a letter and press enter' ><br>
+    placeholder='Type a letter' ><br>
   </form>
-  <p>Wrong Guesses:  <%= session["game"].show_misses%> </p>
+<p><%= guess %> </p>
+<p>Guesses: <%= session["game"].show_misses%> </p>
+</section>
+  <aside>
+  <% if session["game"].misses.length == 0%>
+      <img src="images/0.png" alt="">
+  <%elsif session["game"].misses.length == 1%>
+      <img src="images/1.png" alt="">
+  <%elsif session["game"].misses.length == 2%>
+      <img src="images/2.png" alt="">
+  <%elsif session["game"].misses.length == 3%>
+      <img src="images/3.png" alt="">
+  <%elsif session["game"].misses.length == 4%>
+      <img src="images/4.png" alt="">
+  <%elsif session["game"].misses.length == 5%>
+      <img src="images/5.png" alt="">
+  <%elsif session["game"].misses.length == 6%>
+      <img src="images/6.png" alt="">
+  <%elsif session["game"].misses.length == 7%>
+      <img src="images/7.png" alt="">
+  <%end%>
+</aside>
